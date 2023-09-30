@@ -26,7 +26,45 @@ body, html {
     display: flex;
     background-color: var(--white);
     width: 100%;
-    height: 5vh;
+    height: 10rem;
+    color: var(--black);
+    justify-content: space-evenly;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.location {
+    display: flex;
+    font-size: 2rem;
+    padding-left: 0;
+    padding-right: 30em;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    align-items: center;
+}
+
+.location-icon {
+    font-size: 6rem;
+    color: var(--orange);
+}
+
+.address {
+    font-weight: 600;
+    position: relative;
+    left: 1rem;
+}
+
+.post-code {
+    font-weight: normal;
+    position: relative;
+    justify-content: left;
+    align-items: flex-start;
+    text-align: left;
+    left: 1rem;
 }
 
 .nav-header {
@@ -38,33 +76,32 @@ body, html {
     padding: 1rem 0;
 }
 
-#nav-bar {
+.navbar {
     display: flex;
     position: relative;
     justify-content: space-evenly;
     align-items: flex-start;
     font-size: 2rem;
-    padding-left: 15rem;
-    padding-right: 15rem;
+    padding-left: 0;
+    padding-right: 30em;
     margin-right: auto;
     margin-left: auto;
     width: 100%;
-
 }
 
 
-#nav-bar ul {
+.navbar ul {
     display: flex;
     flex-direction: row;
 }
 
-#nav-bar li {
+.navbar li {
     list-style: none;
     padding-left: 0;
     margin-bottom: 0;
 }
 
-a {
+.page-link {
     color: var(--white);
     text-decoration: none;
     padding: 3rem 2.5rem;
@@ -73,7 +110,7 @@ a {
 }
 
 
-a:hover {
+.page-link:hover {
     box-shadow: inset 0 0 0 3em var(--orange);
 }
 
@@ -91,4 +128,8 @@ a:hover {
 #home h1 {
     font-size: 6rem;
     font-weight: 500;
+}
+
+@media (max-width: 1500px) {
+
 }
