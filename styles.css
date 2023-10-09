@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700&');
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
     --light-orange: #f0a202ff;
@@ -9,10 +9,12 @@
     --white: #EEF8FF;
     --black: #1c1c1c;
     --dark-blue: #21303e;
+    --font-size-info-title: 2.5rem;
+    --font-weight-info-title: 600;
 }
 
 body, html {
-    font-family: "Poppins", sans-serif ;
+    font-family: "Onest", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -35,40 +37,69 @@ body, html {
     display: flex;
     flex-direction: column;
 }
-
 .location {
     display: flex;
     font-size: 2rem;
-    padding-left: 0;
-    padding-right: 30em;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
     align-items: center;
 }
 
-.location-icon {
-    font-size: 6rem;
+.icon {
+    font-size: 5rem;
     color: var(--orange);
+    transition: all 0.1s ease-in-out;
+}
+
+.icon:hover {
+    transform: scale(125%);
+}
+
+.city{
+    font-weight: var(--font-weight-info-title);
+    padding-left: 1rem;
+    font-size: var(--font-size-info-title);
 }
 
 .address {
-    font-weight: 600;
-    position: relative;
-    left: 1rem;
+    font-weight: normal;
+    padding-left: 1rem;
+}
+
+.contact-phone {
+    display: flex;
+    font-size: 2rem;
+    align-items: center;
+}
+
+.tel-num {
+    font-size: var(--font-size-info-title);
+    font-weight: var(--font-weight-info-title);
+    padding-left: 1rem;
+}
+
+.piva {
+    font-weight: normal;
+    padding-left: 1rem;
+}
+
+.contact-email {
+    display: flex;
+    font-size: 2rem;
+    align-items: center;
+}
+
+.email {
+    display: flex;
+    padding-left: 1rem;
+    font-size: var(--font-size-info-title);
+    font-weight: var(--font-weight-info-title);
 }
 
 .post-code {
-    font-weight: normal;
-    position: relative;
-    justify-content: left;
-    align-items: flex-start;
-    text-align: left;
-    left: 1rem;
+    display: flex;
+    padding-left: 1rem;
 }
 
-.nav-header {
-    position: relative;
+.navbar-header {
     display: flex;
     align-items: center;
     background-color: var(--strong-dark-blue);
@@ -78,12 +109,11 @@ body, html {
 
 .navbar {
     display: flex;
-    position: relative;
     justify-content: space-evenly;
     align-items: flex-start;
     font-size: 2rem;
+    padding-right: 15em;
     padding-left: 0;
-    padding-right: 30em;
     margin-right: auto;
     margin-left: auto;
     width: 100%;
