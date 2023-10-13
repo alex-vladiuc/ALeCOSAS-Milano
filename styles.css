@@ -31,6 +31,7 @@ body, html {
     height: 10rem;
     color: var(--black);
     justify-content: space-evenly;
+    transition: all 0.1s ease-in-out;
 }
 
 .flex-column {
@@ -94,7 +95,7 @@ body, html {
     font-weight: var(--font-weight-info-title);
 }
 
-.post-code {
+.email2 {
     display: flex;
     padding-left: 1rem;
 }
@@ -144,6 +145,35 @@ body, html {
     box-shadow: inset 0 0 0 3em var(--orange);
 }
 
+.toggle-btn {
+    position: absolute;
+    top: 1.25rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-btn .bar {
+    height: 3px;
+    width: 100%;
+    background-color: var(--white);
+    border-radius: 10px;
+}
+
+.brand-name {
+    display: flex;
+    padding: 0 1rem;
+}
+
+.logo-text {
+    padding: 1rem;
+    height: 7rem;
+    width: 18rem;
+}
+
 #home  {
     display: flex;
     height: 100vh;
@@ -151,7 +181,6 @@ body, html {
     background-color: var(--black);
     justify-content: center;
     text-align: center;
-
     top: 6rem;
 }
 
@@ -161,5 +190,70 @@ body, html {
 }
 
 @media (max-width: 1500px) {
+    .info-header {
+        height: 6rem;
+    }
 
+    .info-header p, .info-header span {
+        font-size: 1.5rem;
+    }
+
+    .icon {
+        font-size: 3rem;
+    }
+
+    .navbar {
+        font-size: 1.5rem;
+    }
+
+    .page-link {
+        padding: 2.5rem 2rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .toggle-btn {
+        display: flex;
+    }
+
+    .info-header {
+        transition: all 0.1s ease-in-out;
+        height: 0;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    .info-text {
+        display: none;
+    }
+
+    .page-link {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-right: 0;
+    }
+
+    .navbar ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar li {
+        text-align: center;
+    }
+
+    .page-link {
+        padding: .5rem 1rem;
+    }
+
+    .page-link:active {
+        display: flex;
+    }
 }
