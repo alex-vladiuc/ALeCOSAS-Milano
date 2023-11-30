@@ -163,7 +163,7 @@ body, html {
 
 #services {
     display: flex;
-    height: 45vh;
+    min-height: 100rem;
     width: 100vw;
     justify-content: center;
     padding-top: 5rem;
@@ -233,7 +233,7 @@ body, html {
 
 #about {
     display: flex;
-    height: 20vh;
+    height: 30rem;
     width: 100vw;
     justify-content: center;
     padding-top: 5rem;
@@ -436,7 +436,7 @@ body, html {
     }
 
     #services {
-        height: 140vh;
+        height: 200rem;
     }
 
     .quote {
@@ -450,11 +450,15 @@ body, html {
         font-size: 1.5rem;
     }
 
+    #services {
+        height: 220rem;
+    }
+
 }
 
 @media only screen and (max-width: 480px) {
     #services {
-        height: 160vh;
+        height: 230rem;
     }
 
     .quote {
@@ -468,11 +472,15 @@ body, html {
         width: 30rem;
         font-size: 1.2rem;
     }
+
+    #services {
+        height: 250rem;
+    }
 }
 
 @media only screen and (max-width: 340px) {
     #services {
-        height: 180vh;
+        height: 260rem;
     }
 }
 
