@@ -166,9 +166,9 @@ body, html {
     min-height: 100rem;
     width: 100vw;
     justify-content: center;
-    margin-top: 5rem;
     background: var(--white);
     overflow: hidden;
+    padding-top: 5rem;
 }
 
 .section-title {
