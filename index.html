@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> <!-- CHANGE THIS TO IT -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -8,70 +8,152 @@
     <script src="script.js" defer></script>
     <title>ALeCOSAS</title>
 </head>
-<body>
-    <div class="info-header">
-        <p class="location">
-            <a href="https://maps.app.goo.gl/3ZzTxuLFQvV6UeJW8" target="_blank" class="icon">
-                <i class="fa-solid fa-location-dot"></i>
-            </a>
-            <span class="flex-column">
-                <span class="city info-text">Via L.G Faravelli 4</span>
-                <span class="address info-text">20149 Milano</span>
-            </span>
-        </p>
-        <p class="contact-phone">
-            <a href="tel:+393515799956" class="icon">
-                <i class="fa-solid fa-phone"></i>
-            </a>
-            <span class="flex-column">
-                <span class="tel-num info-text">+39 351.3799956</span>
-                <span class="piva info-text">P.IVA: 10615400966</span>
-            </span>
-        </p>
-        <p class="contact-email">
-            <a href="mailto:alecosas30@gmail.it" class="icon">
-                <i class="fa-solid fa-envelope"></i>
-            </a>
-            <span class="flex-column">
-                <span class="email info-text">alecosas30@gmail.it</span>
-                <span class="email2 info-text">oxanagur@yahoo.com</span>
-            </span>
-        </p>
-    </div>
-    <div class="navbar-header">
-        <div class="brand-name">
-            <img class="logo-text" src="./Images/ALeCOSAS%20logo%20text.png" alt="ALeCOSAS logo text"></img>
-        </div>
-        <nav class="navbar">
-            <a href="#" class="toggle-btn">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </a>
-            <div class="nav-links">
-                <ul>
-                    <li>
-                        <a href="#home" class="page-link">Home</a>
-                    </li>
-                    <li>
-                        <a href="#about" class="page-link">About</a>
-                    </li>
-                    <li>
-                        <a href="#services" class="page-link">Services</a>
-                    </li>
-                    <li>
-                        <a href="#contact" class="page-link">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
+<body">
     <section id="home">
-        <div class="heading">
+        <div class="slider">
+            <div class="slide current">
+                <div class="content">
+                </div>
+            </div>
+            <div class="slide">
+                <div class="content">
+                </div>
+            </div>
+            <div class="slide">
+                <div class="content">
+                </div>
+            </div>
+            <div class="slide">
+                <div class="content">
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="prev"><i class="fa-solid fa-arrow-left"></i></button>
+            <button id="next"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="buttondowncontainer">
+            <a id="buttondown" href="#services"><i class="fa-solid fa-chevron-down"></i></a>
+        </div>
+        <div class="navbar-header">
+            <div class="brand-name" id="brandName">
+                <img class="logo-text"  src="./Images/ALeCOSAS%20logo%20text%20black.png" alt="ALeCOSAS logo text">
+            </div>
+            <div id="navbarHeader">
+                <nav class="navbar">
+                    <div class="nav-links">
+                        <ul>
+                            <li>
+                                <a href="#home" class="page-link">Home</a>
+                            </li>
+                            <li>
+                                <a href="#services" class="page-link">Services</a>
+                            </li>
+                            <li>
+                                <a href="#about" class="page-link">About</a>
+                            </li>
+                            <li>
+                                <a href="#contact" class="page-link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <a class="collapse-nav" onclick="collapseNav()">&#9776;</a>
         </div>
     </section>
-    <section id="about"></section>
-    <section id="services"></section>
-    <section id="contact"></section>
+    <section id="services">
+        <div>
+            <div>
+                <h2 class="section-title">Services</h2>
+                <h1 class="servicesinfo-moto">Energizing Innovation <span class="block-orange">Powering Progress</span></h1>
+            </div>
+            <div class="services-container">
+                <div class="service service1">
+                    <div class="icon">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <div class="service-title service1-title">
+                        <h2>Electricity</h2>
+                    </div>
+                    <div class="service-desc service1-desc">
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed consequat diam. Aenean mollis euismod sapien, vel sollicitudin diam interdum nec. Ut id tellus eget neque ultrices pulvinar. </h2>
+                    </div>
+                </div>
+                <div class="service service2">
+                    <div class="icon">
+                        <i class="fa-solid fa-droplet"></i>
+                    </div>
+                    <div class="service-title service2-title">
+                        <h2>Hydraulics</h2>
+                    </div>
+                    <div class="service-desc service2-desc">
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed consequat diam. Aenean mollis euismod sapien, vel sollicitudin diam interdum nec. Ut id tellus eget neque ultrices pulvinar. </h2>
+                    </div>
+                </div>
+                <div class="service service3">
+                    <div class="icon">
+                        <i class="fa-solid fa-trowel-bricks"></i>
+                    </div>
+                    <div class="service-title service3-title">
+                        <h2>Mansonry</h2>
+                    </div>
+                    <div class="service-desc service3-desc">
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed consequat diam. Aenean mollis euismod sapien, vel sollicitudin diam interdum nec. Ut id tellus eget neque ultrices pulvinar. </h2>
+                    </div>
+                </div>
+                <div class="service service4">
+                    <div class="icon">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                    </div>
+                    <div class="service-title service4-title">
+                        <h2>Installations</h2>
+                    </div>
+                    <div class=" service-desc service4-desc">
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed consequat diam. Aenean mollis euismod sapien, vel sollicitudin diam interdum nec. Ut id tellus eget neque ultrices pulvinar. </h2>
+                    </div>
+                </div>
+                <div class="service service5">
+                    <div class="icon">
+                        <i class="fa-solid fa-paint-roller"></i>
+                    </div>
+                    <div class="service-title service5-title">
+                        <h2>Painting</h2>
+                    </div>
+                    <div class="service-desc service5-desc">
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed consequat diam. Aenean mollis euismod sapien, vel sollicitudin diam interdum nec. Ut id tellus eget neque ultrices pulvinar. </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div>
+            <div>
+                <h2 class="section-title about-title">About</h2>
+                <h2 class="quote">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac volutpat ante. Curabitur nunc orci, vehicula a rutrum vitae, viverra vitae dui. Suspendisse ex erat, fermentum sed lacus ac, finibus iaculis libero. Sed elit justo, scelerisque non elit ut, viverra tempus ipsum. Curabitur urna diam, egestas et imperdiet ut, fringilla vel dolor. Donec vestibulum nisi id ligula lacinia, ut rhoncus mi venenatis. Aliquam luctus turpis eu tortor dapibus vehicula.
+                </h2>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div>
+            <h2 class="section-title contact-title">Contact</h2>
+            <h2 class="find-more">Find Out More</h2>
+            <div class="contact">
+                <a href="mailto:alecosas30@gmail.it" target="_blank" class="button contact-details">
+                    <i class="fas fa-at"></i> Email
+                </a>
+                <a href="tel:+393515799956" class="button contact-details">
+                    <i class="fas fa-mobile-alt"></i> Call
+                </a>
+                <a href="https://maps.app.goo.gl/VVphqDtDdGGAUBy86" target="_blank" class="button contact-details">
+                    <i class="fa-solid fa-location-dot"></i> Visit
+                </a>
+            </div>
+            <iframe class="googlemaps-api" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJI-vxIA7BhkcRtxK_xnTawMI&key=AIzaSyDlK4sr4p6q7PglFUXmCZVWlTPMvZRRTKY"></iframe>
+        </div>
+    </section>
 </body>
 </html>
